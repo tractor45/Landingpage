@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+:root {
+    --main-accent-color: #fffff;
+    --section-title-color-dark: #37474f;
+    --body-color: #495057;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: justify;
+
+}
+
+h1 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2.6rem;
+    line-height: 4rem;
+    font-weight: 800;
+
+}
+
+.btn-white {
+    border: 2px solid #ffffff;
+    border-radius: 2rem;
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: lowercase;
+    font-size: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.btn-white:hover {
+    background-color: #ffffff;
+    color: var(--main-accent-color);
+    border: 2px solid #ffffff;
+}
+
+/* Section title */
+.section-title {
+    position: relative;
+}
+
+h2.section-title-heading {
+    color: var(--section-title-color-dark);
+    padding-top: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    border-bottom: 2px solid var(--main-accent-color);
+    width: 8%;
+    top: 80px;
+}
+
+.section-title:hover::after {
+    width: 12%;
+    transition: all 0.6s ease-out;
+    -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+
+}
+
+
+
+/* ============ NAVIGATION =============== */
+
+.navbar {
+    padding-top: 1.2rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .85rem;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #000000;
+}
+
+.navbar.active {
+    background-color: rgb(192, 192, 192);
+    box-shadow: 1px 2px 10px rgba(0,0,0,0.1);
+}
+
+
+/* ============ HERO =============== */
+
+#hero {
+    background-image: linear-gradient(to right, rgba(0,172,217, 0.62), rgba(105,240,174, 0.52)), url('../imagenes/foto.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 18rem;
+    padding-bottom: 13rem;
+    position: relative;
+}
+
+
+.main-hero-content h1 {
+    text-transform: uppercase;
+    letter-spacing: .11rem;
+}
+
+.main-hero-content p {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    line-height: 1.7rem;
+    font-size: 1.2rem;
+}
+
+.image-box img {
+    position: absolute;
+    top: 4rem;
+    z-index: 1;
+}
+
+/* ============ ABOUT =============== */
+
+#about i {
+    color: var(--main-accent-color);
+
+}
+
+#about h3 {
+    color: var(--section-title-color-dark);
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+#about p {
+    color: var(--body-color);
+    font-size: 1rem;
+    line-height: 1.7rem;
+}
+
+#about {
+    position: relative;
+    padding-bottom: 8rem;
+}
+
+
+/* ============ FEATURES =============== */
+
+#features {
+
+    background-color: #fafafa;
+    padding-bottom: 6rem;
+    margin-top: 3rem;
+}
+
+#features img {
+    display: block;
+    margin: 0 auto;
+}
+
+#features .feature-block {
+    text-align: center;
+}
+
+#features .feature-block h3 {
+    color: var(--section-title-color-dark);
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+#features .feature-block img {
+    padding-bottom: 1rem;
+}
+
+#features .feature-block p {
+    color: var(--body-color);
+    font-size: 1rem;
+    line-height: 1.7rem;
+}
+
+/* ============ DOWNLOAD =============== */
+
+#download {
+    background-color: rgb(192, 192, 192);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 15rem;
+    position: relative;
+}
+
+
+
+#download .download-title h2 {
+    padding-top: 10rem;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+#download .download-title p {
+    color: #000000;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    margin-top: 2.5rem;
+}
+
+#download .download-title .download-btns {
+    margin-top: 4rem;
+}
+
+#download .download-title .download-btns a {
+    border: 2px solid #000000;
+    border-radius: 2rem;
+    color: #000000;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: .8rem 2rem;
+}
+
+#download .download-title .download-btns a:hover {
+    background-color: #ffffff;
+    color: var(--main-accent-color);
+    border: 2px solid #ffffff;
+    text-decoration: none;
+}
+
+
+
+
+#footer {
+
+
+    position: relative;
+}
+
+#footer .social-icons {
+    margin-top: -1rem;
+}
+#footer .social-icons a {
+
+    margin-right: 40px;
+    color: #495057;
+
+}
+
+.copyright p {
+    margin-top: 1rem;
+    color: #37474f;
+    font-size: .9rem;
+}
